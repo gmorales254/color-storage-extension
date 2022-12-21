@@ -1,0 +1,32 @@
+{
+    "name": "color-storage-extension",
+    "version": "1.0.0",
+    "description": "Color Storage Extension",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "scripting",
+        "activeTab"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "./images/funnycon.png",
+            "32": "./images/funnycon.png",
+            "48": "./images/funnycon.png",
+            "128": "./images/funnycon.png"
+        }
+    },
+    "icons": {
+        "16": "./images/funnycon.png",
+        "32": "./images/funnycon.png",
+        "48": "./images/funnycon.png",
+        "128": "./images/funnycon.png"
+    },
+    "chrome_url_overrides": {
+        "newTab": "newtab.html"
+    }
+}
